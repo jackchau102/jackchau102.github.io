@@ -75,7 +75,7 @@ nav a:focus {
 
 @media(min-width: 55rem){
 	#container-jum {
-		height: 100vh;
+		min-height: 100vh;
 	}
 }
 
