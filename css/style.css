@@ -1,0 +1,457 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	box-sizing: border-box;
+	transition: all ease-in-out 150ms;
+}
+
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*---Typography---*/
+
+h1 {
+	font-weight: 300;
+	font-size: 3.5rem;
+}
+
+/*---Header---*/
+
+header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 1em;
+	margin-top: 1em;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+}
+
+nav a {
+	font-weight: 200;
+	font-size: 1rem;
+	text-decoration: none;
+	padding: .7em;
+	color: #fff;
+}
+
+@media(min-width: 55rem){
+	nav a {
+		font-size: 1.2em;
+	}
+}
+
+nav a:hover,
+nav a:focus {
+	color: #C8C8A9;
+}
+
+/*--Jumbotron--*/
+
+#container-jum{
+	padding: 10em inherit;
+	margin: 0 auto;
+	background-color: #2A383B;
+}
+
+@media(min-width: 55rem){
+	#container-jum {
+		height: 100vh;
+	}
+}
+
+
+.jumbotron h1 {
+	font-size: 4rem;
+	text-decoration: none;
+	font-weight: 700;
+	letter-spacing: 0.4rem;
+	display: block;
+	margin: 2.2rem 0;
+	margin-bottom: 1.5rem;
+	color: #fff;
+
+}
+
+.jumbotron p {
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin: .7rem 0;
+	color: #fff;
+}
+
+@media(min-width: 55rem) {
+	.jumbotron h1 {
+		font-size: 4.2rem
+	}
+
+	.jumbotron p {
+		font-size: 1.6rem
+	}
+}
+
+.circle .profile-pic {
+	margin-top: 7rem;
+	background: url('photos/profile_pic.jpg');
+	background-size: cover;
+	border-radius: 50% 50% 50% 50%;
+	width: 300px;
+	height: 300px;
+	box-shadow: 0 0 10px #000;
+}
+
+.resume {
+	padding: 35px;
+}
+
+.button {
+	font-size: 1.2rem;
+	text-decoration: none;
+	color: #fff;
+	border-width: 2px;
+	border-style: solid;
+	padding: 0.5em 2em;
+	border-radius: 25px;
+}
+
+@media(min-width: 55rem) {
+	.button {
+		font-size: 1.4rem;
+		text-decoration: none;
+		color: #fff;
+		border-width: 2px;
+		border-style: solid;
+		padding: 0.7em 4em;
+		border-radius: 25px;
+	}
+}
+
+.button-accent {
+	color: #C8C8A9;
+	border-color: #C8C8A9;
+}
+
+.button-accent:hover {
+	background-color: #C8C8A9;
+	color: #2A363B;
+
+}
+
+/* Facebook */
+.logo-jum .fa-facebook {
+  background: #2A363B;
+  color: white;
+}
+
+/* LinkedIn */
+.logo-jum .fa-linkedin {
+  background: #2A363B;
+  color: white;
+}
+
+/* GitHub */
+.logo-jum .fa-github {
+  background: #2A363B;
+  color: white;
+}
+
+.logo-jum .fab:hover {
+	background-color: #C8C8A9;
+	color: #2A363B;
+}
+
+@media(min-width: 55rem){
+	.logo-jum .fab {
+		padding: 12px;
+	}
+}
+
+
+
+/* --- About section --- */
+
+.container {
+	margin: 2.2rem 0;
+	margin-bottom: 2rem;
+	position: relative;
+	/*border: solid orange;*/
+	clear: both;
+	overflow: hidden;
+}
+
+.about-textbox {
+	background: #fff;
+	padding: 0 1em;
+	word-wrap: break-word;
+}
+
+@media(min-width: 64rem){
+	.about-textbox {
+		padding: 0 5em;
+	}
+}
+
+.about-textbox h1 {
+	margin: auto;
+	padding-top: .8em;
+}
+
+.about-textbox ul {
+	margin-top: 2.2em;
+	padding: 0 5em;
+}
+
+@media(max-width: 64rem) {
+	.about-textbox ul {
+		margin-top: 2.2em;
+		padding: 0;
+		font-size: .9em;
+	}
+
+}
+
+.intro li {
+	padding: 0.6em;
+	font-size: 1.2em;
+	list-style: none;
+}
+
+.intro span {
+	padding: .3em;
+	margin-right: 0;
+	margin-left: 30%;
+	float: left;
+	font-weight: 700;
+}
+
+.intro .answer {
+	font-weight: 200;
+	float: right;
+	margin-left: 0;
+	margin-right: 30%;
+}
+
+@media(max-width: 673px) {
+
+	.intro span {
+		clear: both;
+	}
+
+	.intro .answer {
+		float: left;
+		margin-left: 30%;
+		margin-right: 0;
+	}
+
+	.about-textbox ul {
+		text-align: center;
+	}
+}
+
+
+.about-textbox p {
+	clear: both;
+	text-align: left;
+	margin-bottom: 0;
+	padding: 0 1em;
+	font-size: 1.2em;
+  	overflow: hidden;
+  	white-space: initial;
+  	line-height: 1.2;
+}
+
+#first_p {
+	margin-top: 2em;
+	padding-top: 3em;
+}
+
+/*--- Logo ---*/
+
+.fab {
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.logo {
+	clear: both;
+}
+
+.logo ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.logo li {
+	margin: 1em;
+	display: inline-block;
+}
+
+.fab:hover {
+	opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* LinkedIn */
+.fa-linkedin {
+  background: #4875B4;
+  color: white;
+}
+
+/* GitHub */
+.fa-github {
+  background: #333;
+  color: white;
+}
+
+/* --- Project section ---*/
+
+#container-proj {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 2em;
+	background-color: #2A363B;
+	color: #fff;
+	text-align: center;
+}
+
+.projects figure {
+	position: relative;
+
+}
+
+.sub-project figcaption {
+	position: absolute;
+	z-index: 100;
+	bottom: 3em;
+	left: 4em;
+	right: 4em;
+	padding: 1em;
+	padding-bottom: 1.5em;
+	margin: .5em;
+	color: white;
+	background-color: rgba(0,0,0,.6);
+	border-radius: 25px;
+}
+
+.sub-project figcaption p {
+	margin: 0;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.sub-project a {
+	margin-top: 4em;
+	margin-bottom: 2em;
+}
+
+.sub-project img {
+	border-radius: 25px;
+}
+
+
+@media(min-width: 60rem){
+	.projects figure {
+		margin: 0;
+		float: left;
+		width: 33.333333%;
+		padding: 1em;
+		position: relative;
+		overflow: hidden;
+	}	
+
+	.sub-project img {
+		padding: 0px;
+		width: 400px;
+		height: 400px;
+		box-sizing: border-box;
+	}
+
+	.sub-project figcaption {
+		transform: translateY(150%);
+	}
+
+	.projects figure:hover figcaption {
+		transform: translateY(0%);
+	}
+
+	#container-proj{
+		padding-bottom: 6em;
+	}
+}
+
+.button-small {
+	padding: .5rem 1rem;
+	font-size: .9rem;
+}
+
+.to-github {
+	margin-top: 1em;
+	display: inline-block;
+	padding: 35px;
+}
+
+/* --- Experience section ---*/
+
+#container-exp {
+	text-align: left;
+}
+
+.experience h1 {
+	text-align: center;
+}
+
+.experience h2 {
+	font-weight: 700;
+	font-size: 1.5em;
+	margin: 0;
+	padding-bottom: 0.7em;
+	padding-left: 3em;
+}
+
+i {
+	padding-right: .8em;
+}
+
+.sub-exp-right ul {
+	list-style: none;
+}
+
+.unstyled-list li {
+	font-size: 1.2em;
+	padding: 0;
+	padding-bottom: 1em;
+}
+
+
+
+
+
