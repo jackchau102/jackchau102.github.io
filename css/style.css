@@ -443,15 +443,81 @@ i {
 
 .sub-exp-right ul {
 	list-style: none;
+	margin-left: 2em;
 }
 
 .unstyled-list li {
 	font-size: 1.2em;
 	padding: 0;
 	padding-bottom: 1em;
+	font-style: italic;
 }
 
+.unstyled-list .add-ons {
+	list-style: disc;
+	font-size: 1em;
+	margin-left: 3em;
+	font-style: normal;
+}
 
+.unstyled-list #subtitle {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 0.9em;
+	color: gray;
+}
 
+.inner-experience {
+	padding: 0;
+	font-size: 0.8em;
+	color: black;
+	
+}
 
+.inner-experience li {
+	font-style: normal;
+	list-style-type: disc;
+}
 
+.unstyled-list li a {
+	text-decoration: none;
+}
+
+hr {
+	width: 0%;
+	min-width: 20%;
+	max-width: 100%;
+	margin: 0 auto;
+	border: none;
+	border-bottom: 1px solid #666;
+	position: relative;
+	transition: box-shadow 200ms ease-in-out;
+	box-shadow: 0px 0px 0px 0px #f9f9f9;
+	padding-top: 5px;
+	padding-bottom: 5px;
+  }
+  
+hr.activated {
+	box-shadow: 0px 4px 0px 0px #666;
+}
+
+label {
+	position: absolute;
+	opacity: 0;
+	right: 100%;
+	margin-right: 4px;
+	padding: 4px;
+	height: 12px;
+	font-size: 14px;
+	margin-top: -12px;
+	border-radius: 2px 4px;
+	transition: opacity 200ms ease-in-out;
+	color: #666;
+	width: 100px;
+	text-align: right;
+	line-height: 1.2;
+}
+
+hr.activated + label {
+	opacity: 1;
+}
