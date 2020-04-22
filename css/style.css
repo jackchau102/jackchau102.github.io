@@ -286,6 +286,7 @@ nav a:focus {
 	.about-textbox ul {
 		text-align: center;
 	}
+
 }
 
 
@@ -433,6 +434,13 @@ nav a:focus {
 	font-size: .9rem;
 }
 
+@media(max-width: 600px){
+	.button-small {
+		padding: .5rem .5rem;
+		font-size: .9rem;
+	}
+}
+
 .to-github {
 	margin-top: 1em;
 	display: inline-block;
@@ -474,6 +482,13 @@ i {
 .sub-exp-right ul {
 	list-style: none;
 	text-align: center;
+}
+
+@media(max-width: 673px){
+	.sub-exp-right{
+		padding-left: 1.2em;
+		padding-right: 1.2em;
+	}
 }
 
 .unstyled-list {
