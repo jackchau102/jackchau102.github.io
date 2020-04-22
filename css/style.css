@@ -60,9 +60,29 @@ nav a {
 	}
 }
 
+a {
+	text-decoration: none;
+}
+
 nav a:hover,
 nav a:focus {
 	color: #C8C8A9;
+}
+
+.clickable {
+	font-weight: 700;
+	opacity: 0.8;
+}
+
+.clickable:hover,
+.clickable:focus {
+	font-size: 1.2em;
+	opacity: 1;
+}
+
+.clickable:active,
+.clickable:visited {
+	color: rgb(47, 72, 66);
 }
 
 /*--Jumbotron--*/
