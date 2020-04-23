@@ -74,14 +74,14 @@ nav a:focus {
 	opacity: 0.8;
 }
 
+.clickable {
+	color: rgb(47, 72, 66);
+}
+
 .clickable:hover,
 .clickable:focus {
 	font-size: 1.2em;
 	opacity: 1;
-}
-
-.clickable:active {
-	color: rgb(47, 72, 66);
 }
 
 .clickable:visited {
