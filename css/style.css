@@ -80,7 +80,10 @@ nav a:focus {
 	opacity: 1;
 }
 
-.clickable:active,
+.clickable:active {
+	color: rgb(47, 72, 66);
+}
+
 .clickable:visited {
 	color: rgb(47, 72, 66);
 }
